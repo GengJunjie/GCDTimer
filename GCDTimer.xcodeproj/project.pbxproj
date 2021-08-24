@@ -16,6 +16,8 @@
 		8A91205026D49F28008D2081 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A91204F26D49F28008D2081 /* main.m */; };
 		8A91205A26D49F28008D2081 /* GCDTimerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A91205926D49F28008D2081 /* GCDTimerTests.m */; };
 		8A91206526D49F28008D2081 /* GCDTimerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A91206426D49F28008D2081 /* GCDTimerUITests.m */; };
+		8A91207426D49F3F008D2081 /* AViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A91207326D49F3F008D2081 /* AViewController.m */; };
+		8A91207726D49F9A008D2081 /* GJJTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A91207626D49F9A008D2081 /* GJJTimer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,10 @@
 		8A91206026D49F28008D2081 /* GCDTimerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GCDTimerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A91206426D49F28008D2081 /* GCDTimerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDTimerUITests.m; sourceTree = "<group>"; };
 		8A91206626D49F28008D2081 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A91207226D49F3F008D2081 /* AViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AViewController.h; sourceTree = "<group>"; };
+		8A91207326D49F3F008D2081 /* AViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AViewController.m; sourceTree = "<group>"; };
+		8A91207526D49F9A008D2081 /* GJJTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GJJTimer.h; sourceTree = "<group>"; };
+		8A91207626D49F9A008D2081 /* GJJTimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GJJTimer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +121,10 @@
 				8A91204B26D49F28008D2081 /* LaunchScreen.storyboard */,
 				8A91204E26D49F28008D2081 /* Info.plist */,
 				8A91204F26D49F28008D2081 /* main.m */,
+				8A91207226D49F3F008D2081 /* AViewController.h */,
+				8A91207326D49F3F008D2081 /* AViewController.m */,
+				8A91207526D49F9A008D2081 /* GJJTimer.h */,
+				8A91207626D49F9A008D2081 /* GJJTimer.m */,
 			);
 			path = GCDTimer;
 			sourceTree = "<group>";
@@ -267,7 +277,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A91204526D49F26008D2081 /* ViewController.m in Sources */,
+				8A91207426D49F3F008D2081 /* AViewController.m in Sources */,
 				8A91203F26D49F26008D2081 /* AppDelegate.m in Sources */,
+				8A91207726D49F9A008D2081 /* GJJTimer.m in Sources */,
 				8A91205026D49F28008D2081 /* main.m in Sources */,
 				8A91204226D49F26008D2081 /* SceneDelegate.m in Sources */,
 			);
@@ -441,7 +453,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 9Z78449GFH;
 				INFOPLIST_FILE = GCDTimer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -449,6 +463,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gengjunjie.GCDTimer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = gengjunjie.developer;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -458,7 +473,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 9Z78449GFH;
 				INFOPLIST_FILE = GCDTimer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -466,6 +483,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gengjunjie.GCDTimer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = gengjunjie.developer;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

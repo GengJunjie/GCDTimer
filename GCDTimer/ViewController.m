@@ -6,6 +6,7 @@
 //
 
 #import "ViewController.h"
+#import "AViewController.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,14 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    AViewController *ctrl = [[AViewController alloc] init];
+    ctrl.modalPresentationStyle = 0;
+    [self presentViewController:ctrl animated:YES completion:nil];
+}
+
+
 
 
 @end
